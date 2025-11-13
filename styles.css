@@ -1,0 +1,142 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.email-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 800px;
+  padding: 24px;
+  margin: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background: linear-gradient(135deg, #ffe4e1, #fff5e6);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #d6336c;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Message */
+.message {
+  text-align: left;
+  padding: 12px;
+}
+
+.message h2 {
+  color: #ff4d6d;
+  margin-bottom: 10px;
+}
+
+/* Gifts Section */
+.gifts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.gift {
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.gift img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gift img:hover {
+  transform: scale(1.05);
+}
+
+.gift figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Videos Section */
+.media {
+  margin-top: 20px;
+}
+
+.video-block {
+  margin-bottom: 24px;
+}
+
+.video-block h3 {
+  color: #d6336c;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+video {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.signature {
+  color: #d6336c;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .gifts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
